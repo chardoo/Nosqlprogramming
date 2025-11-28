@@ -42,7 +42,7 @@ public class ShopSimulation {
             shop.addProductToShop(9, "HDMI Cable");
             shop.addProductToShop(10, "Power Adapter");
             
-            // Create customers and simulate purchases
+            // Create customers for  simulating purchases
             int customer1 = 101;
             int customer2 = 102;
             int customer3 = 103;
