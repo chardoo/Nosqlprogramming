@@ -1,4 +1,4 @@
-
+package org.proj;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -38,4 +38,8 @@ public interface MultiVersionMap<K extends Comparable<? super K>, P> {
      * @return
      */
     Iterator<Map.Entry<K, P>> snapshot(long timestamp);
+
+    P findVisible(K key, long timestamp);
+
+    Map<K, P> rangeSnapshot(K low, K high, long timestamp);
 }

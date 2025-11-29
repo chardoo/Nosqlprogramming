@@ -1,4 +1,4 @@
-
+package org.proj;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Test {
-    public record Payload(String title, String comment, String timestamp){};
+    public record Payload(String title, String comment, String timestamp){}
     public interface FlushableKVStore extends KVStore {
         void flushDB();
     }

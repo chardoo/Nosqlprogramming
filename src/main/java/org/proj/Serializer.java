@@ -4,4 +4,6 @@ public interface Serializer<T> {
 
     String serialize(T t);
     T deSerialize(String serializedT);
+
+    T deserialize(String payload);
 }
